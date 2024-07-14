@@ -19,7 +19,8 @@ app.use(cookieparser());
 
 const corsOptions = {
     credentials: true,
-    origin: 'http://localhost:5173',
+    // origin: 'http://localhost:5173',
+    origin: 'https://airbnb-4299.vercel.app/login'
 };
 
 app.use(cors(corsOptions));
