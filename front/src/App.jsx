@@ -3,7 +3,7 @@ import {Navigate} from 'react-router-dom'
 import {UserContext} from "./UserContext";
 import {useContext} from "react";
 
-axios.defaults.baseURL = 'https://airbnb-npkz6olnt-kk7188048s-projects.vercel.app/';
+axios.defaults.baseURL = `${window.location.origin}`;
 axios.defaults.withCredentials = true;
 import {Route, Routes} from "react-router-dom";
 import IndexPage from "./pages/IndexPage.jsx";
