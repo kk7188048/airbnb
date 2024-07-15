@@ -3,7 +3,7 @@ import {Navigate} from 'react-router-dom'
 import {UserContext} from "./UserContext";
 import {useContext} from "react";
 
-axios.defaults.baseURL = `${window.location.origin}`;
+axios.defaults.baseURL = 'https://airbnb-kbzb.onrender.com';
 axios.defaults.withCredentials = true;
 import {Route, Routes} from "react-router-dom";
 import IndexPage from "./pages/IndexPage.jsx";

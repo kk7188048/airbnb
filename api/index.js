@@ -11,7 +11,7 @@ import cookieparser from 'cookie-parser';
 import bycrypt from 'bcryptjs';
 import bcrypt from 'bcrypt';
 import download from 'image-downloader';
-const port = 3000;
+const port = process.env.PORT || 3000;
 import multer from 'multer';
 import Place from './models/Place.js';
 import Booking from './models/Bookings.js';
@@ -20,7 +20,7 @@ app.use(cookieparser());
 const corsOptions = {
     credentials: true,
     // origin: 'http://localhost:5173',
-    origin: 'https://airbnb-4299.vercel.app/login'
+    origin: 'https://airbnb-4299.vercel.app/logi'
 };
 
 app.use(cors(corsOptions));
